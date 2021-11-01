@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:recipehub/models/recipe.dart';
 void main() {
   runApp(MyApp());
 }
@@ -248,5 +248,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
     );
+  }
+
+  List<Recipe> createRecipes(){
+    List<Recipe> recipes = [];
+    recipes.add(Recipe(
+      title: ''
+    ));
   }
 }
